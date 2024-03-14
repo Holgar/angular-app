@@ -1,5 +1,4 @@
 
-
 describe('New User ', { testIsolation: false }, () => {
     before(() => {
         cy.visit('/pages/tables/smart-table')

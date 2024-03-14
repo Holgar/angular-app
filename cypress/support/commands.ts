@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-const { createRandomUser } = require("../e2e/helpers/fakeData.js");
+const { createRandomUser, loginData } = require("../e2e/helpers/fakeData.js");
 
 const userTableSelectors = {
     Id: 'input-editor [placeholder="ID"]',
@@ -47,3 +47,9 @@ Cypress.Commands.add('getSelectorValue', (selector) => {
         return cy.wrap(selectorValue);
     });
 });
+
+Cypress.Commands.add('fillLoginData', (username, password) => {
+    cy.get('input[name="email"]').type(username)
+    cy.get('input[name="password"]').type(password)
+  })
+ 

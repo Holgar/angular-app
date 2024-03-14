@@ -11,4 +11,14 @@ function createRandomUser(){
     };
 }
 
-module.exports = { createRandomUser };
+function loginData(){
+  return {
+    userEmail: createRandomUser().eMail,
+    password: faker.internet.password()
+  }
+}
+
+module.exports = { 
+  createRandomUser,
+  loginData 
+};
