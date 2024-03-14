@@ -10,7 +10,7 @@
     "url": "https://github.com/akveo/ngx-admin/issues"
   },
   "scripts": {
-    "cypress:open" : "npx cypress open",
+    "cypress:open": "npx cypress open",
     "ng": "ng",
     "conventional-changelog": "conventional-changelog",
     "start": "ng serve",
@@ -87,6 +87,7 @@
     "@angular/compiler-cli": "^15.2.10",
     "@angular/language-service": "15.2.10",
     "@compodoc/compodoc": "1.0.1",
+    "@faker-js/faker": "^8.4.1",
     "@fortawesome/fontawesome-free": "^5.2.0",
     "@types/d3-color": "1.0.5",
     "@types/jasmine": "~3.3.0",
